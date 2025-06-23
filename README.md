@@ -10,7 +10,7 @@ A sleek, responsive, and user-friendly currency converter web application that p
 
 ## ✨ Demo
 
-**[➡️ View Live Demo](https://your-live-demo-link.com)** *(Link to your deployed website)*
+**[➡️ View Live Demo](https://adrishikharchowdhury.github.io/Currency-Converter/)** *(Link to your deployed website)*
 
 ---
 
