@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mobilestyle.css">
+    <link rel="stylesheet" href="./assets/css/darkmode.css">
+    <script src="./assets/js/codes.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="shortcut icon" href="./assets/images/Screenshot_22-Jun_06-03-33_14544.png" type="image/x-icon">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <p class="heading">Currency Converter</p>
+    <form>
+        <i class="fa-solid fa-moon" id="toggle"></i>
+        <div class="from-amount">
+            <label for="input-amount"><p>Enter your Amount: </p></label>
+            <input type="text" value="1" placeholder="Enter you amount to convert...">
+        </div>
+        <div class="dropdown">
+            <div class="from box">
+                <p>From:</p>
+                <img src="https://flagsapi.com/US/flat/64.png" />
+                <select name="from" id="from"></select>
+            </div>
+            <button class="swap"><i class="fa-solid fa-right-left"></i></button>
+            <div class="to box">
+                <p>To:</p>
+                <img src="https://flagsapi.com/IN/flat/64.png" />
+                <select name="to" id="to"></select>
+            </div>
+        </div>
+        <div class="to-amount">
+            <label for="converted-amount"><p>Converted Amount: </p></label>
+            <input type="text" placeholder="This is where you will see your converted Amount" disabled>
+        </div>
+        <button class="exchange">Convert</button>
+    </form>
+</body>
+</html>

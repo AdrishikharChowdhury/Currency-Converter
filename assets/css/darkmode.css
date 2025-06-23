@@ -1,0 +1,42 @@
+.dark-mode{
+    background-color: #002A32;
+    color: #F3A712;;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.dark-mode .heading{
+    color: #F3A712;
+}
+
+.dark-mode form{
+    background-color: #00a9a658;
+    box-shadow: 0.4rem 0.8rem 1.2rem 0.5rem rgb(243, 167, 18, 0.25);
+}
+
+.dark-mode input ,.dark-mode input::placeholder{
+    color: #F3A712;
+}
+
+.dark-mode input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: #F3A712 0.2rem solid;
+}
+
+.dark-mode .box p{
+    color: #F3A712;
+}
+
+.dark-mode select {
+    background-color: #092327;
+    border: 1px solid #F3A712;
+    color: #F3A712;
+}
+
+.dark-mode label p,.dark-mode option, .dark-mode .fa-right-left{
+    color: #F3A712;;
+}
+
+.dark-mode .exchange{
+    background-color: #931621;
+    color: #F3A712;
+}
