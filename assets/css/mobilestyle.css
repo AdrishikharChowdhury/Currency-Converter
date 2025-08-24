@@ -1,27 +1,3 @@
-@media (min-width: 901px) and (max-width: 1300px) {
-    .box p{
-        font-size: 0.8rem;
-    }
-
-    .converter{
-        width: 90%;
-    }
-
-    .field{
-        font-size:1rem;
-    }
-
-    input{
-        font-size:1rem;
-    }
-
-    .dropdown{
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-
-/* Tablet screens (≤ 900px) */
 @media (max-width: 900px) {
     select{
         padding: 0.5rem;
