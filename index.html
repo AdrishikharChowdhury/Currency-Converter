@@ -14,9 +14,9 @@
 </head>
 <body>
     <p class="heading">Currency Converter</p>
-    <form>
+    <form class="converter">
         <i class="fa-solid fa-moon" id="toggle"></i>
-        <div class="from-amount">
+        <div class="from-amount field">
             <label for="input-amount"><p>Enter your Amount: </p></label>
             <input type="text" value="1" placeholder="Enter you amount to convert...">
         </div>
@@ -33,9 +33,9 @@
                 <select name="to" id="to"></select>
             </div>
         </div>
-        <div class="to-amount">
+        <div class="to-amount field">
             <label for="converted-amount"><p>Converted Amount: </p></label>
-            <input type="text" placeholder="This is where you will see your converted Amount" disabled>
+            <input type="text" placeholder="This is where you will see your converted amount" disabled>
         </div>
         <button class="exchange">Convert</button>
     </form>

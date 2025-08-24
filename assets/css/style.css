@@ -6,13 +6,6 @@
     color: var(--font-color);
 }
 
-:root{
-    --bgcolor: #D9F7FA;
-    --btn-color:#44CF6C;
-    --font-color:#2B303A;
-
-}
-
 @font-face {
     font-family: 'Playfair Display'; /* Fixed font name */
     src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format('truetype');
@@ -20,123 +13,136 @@
     font-style: normal;
 }
 
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--bgcolor);
-    gap: 3rem;
-    animation: fadeIn 2s ease-in-out;
+:root{
+    --bgcolor2:#AAF683;
+    --bgcolor1:#60D394;
+    --bgcolor3:#FFD97D;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+body{
+    min-width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    background: linear-gradient(to top right, var(--bgcolor1), var(--bgcolor2), var(--bgcolor3));
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    padding: 1rem;
 }
 
 .heading{
-    font-size: 4rem;
+    font-size:2.5rem;
     font-weight: bold;
 }
 
-form{
-    background-color: #ffffffa7;
-    padding: 0.5rem;
-    width: 40rem;
-    height: 40rem;
+.converter{
+    max-width:100%;
+    background-color:rgb(0,0,0,0.5);
+    padding: 2rem;
+    min-width: 60%;
+    height: max-height;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 1rem;
-    border-radius: 5rem;
-    box-shadow: 0.4rem ;
-    box-shadow: 0.4rem 0.8rem 1.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.25rem 1rem 0.25rem rgba(0,0,0,0.5);
+}
+
+#toggle{
+    align-self:end;
+    color: #FFC300;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.field{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
 }
 
 input{
-    padding: 1rem;
-    width: 100%;
-    height: 40%;
+    height: 3rem;
     border-radius: 5rem;
-    border: none;
-    background-color: #ffffff42;
-    font-size: 1.4rem;
-}
-
-.from-amount,.to-amount{
-    width: 80%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 1.4rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    border: #60D394 0.2rem solid;
+    background-color:rgb(0,0,0,0.5);
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 input::placeholder{
-    padding: 1rem;
-    font-size: 1.2rem;
+    color: white;
+    overflow-x: hidden;
 }
 
-.dropdown, .box{
+.dropdown{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    width: 90%;
-    font-size: 1.4rem;
-    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .box{
-    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
-select{
-    padding: 0.4rem;
-}
-
-.swap{
-    padding: 0.4rem;
-    background-color: #ffffff00;
-    border: none;
+.box p{
+    color: white;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .exchange{
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    width: 30%;
-    height: 8%;
-    border: none;
-    border-radius: 5rem;
+    align-self: center;
+}
+
+select{
+    padding: 0.7rem;
+    background: transparent;
     color: white;
-    background-color: var(--btn-color);
+    border: #60D394 0.15rem solid;
     cursor: pointer;
+    width: max-content;
+    height: max-content;
+    border-radius: 1rem;
+    background-color:rgb(0,0,0,0.5);
+}
+
+button{
+    cursor: pointer;
+    background-color: #FFC300;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.exchange{
+    width: 50%;
     transition: all 0.3s ease-in-out;
 }
 
 .exchange:hover{
-    transform: translateY(-1rem);
-}
-
-.exchange:active{
-    transform: translateY(1rem);;
-}
-
-#toggle{
-    align-self: flex-end;
-    font-size: 2rem;
-    color: #FFBB07;
-    margin-right: 4rem;
+    width: 100%;
 }
